@@ -39,6 +39,9 @@ CREATE TABLE `user` (
   PRIMARY KEY (`uid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+INSERT INTO `user` VALUES ('0', '1', 'mxf', '123456', '1', '总经理');
+INSERT INTO `user` VALUES ('1', '1', 'admin', '123456', '1', '董事长');
+
 ```
 
 3.改数据库配置 打开 application.properties 文件， 修改相应的数据源配置，比如数据源地址、账号、密码等。
